@@ -19,11 +19,22 @@ To write a Python program to build a binary tree with a root, left, and right no
 ## PYTHON PROGRAM
 
 ```
-ENTER YOUR CODE
+from binarytree import Node
+l=[]
+for i in range(0,3):
+    a=input()
+    l.append(a)
+root = Node(l[0])
+root.left = Node(l[1])
+root.right = Node(l[2])
+print("Binary Tree : ")
+for i in root.values:
+    print(i,'-->',end=" ")
 ```
 
 ## OUTPUT
-```
-```
+![image](https://github.com/user-attachments/assets/26a81831-58ca-4b5d-a7a7-11d7b0c61890)
+
 
 ## RESULT
+Thus a Python program to build a binary tree with string & integer values is implemented successfully.
